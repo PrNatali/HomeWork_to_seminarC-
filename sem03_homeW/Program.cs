@@ -3,20 +3,21 @@
 void Palindrome(int number)
 {
     int result = 0;
-    while (number > 0)
+    int x = number;
+    while (x > 0)
     {
-        int secondnum = number % 10;
+        int secondnum = x % 10;
         result = result * 10 + secondnum;
-        number = number / 10;
+        x = x / 10;
     }
     if (number == result)
-        Console.WriteLine("number is palindrome");
+        Console.WriteLine($"number {number} is palindrome");
     else
-        Console.WriteLine("dont palindrome");   
+        Console.WriteLine($"number {number} dont palindrome");   
 }
 
 Console.WriteLine("enter the number");
-int x = Convert.ToInt32(Console.ReadLine());
+int a = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine();
-Palindrome(x);
+Palindrome(a);
