@@ -87,11 +87,10 @@ void FindMaxMin(double[]array)
     for(int i = 0; i < array.Length; i ++)  
     {
         if(array[i] > max) max = array[i];
-        if(array[i] > min) min = array[i];
-        double result = max - min;
-    Console.WriteLine(result);
-    
-    }   
+        if(array[i] < min) min = array[i];
+    }
+    double result = max - min;
+Console.WriteLine($"result = {result}");
 }
  
 Console.Write("enter size the array: ");
