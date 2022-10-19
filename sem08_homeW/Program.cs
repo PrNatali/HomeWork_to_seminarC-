@@ -149,7 +149,7 @@ int[,,]myArr = NewRandom3dArr();
 Print3dArray(myArr);
 */
 /*
-
+// Заполнить массив по спирали
 int [,] NewSpir2dArr ()
 {
     Console.Write("enter size of array: ");
@@ -174,8 +174,7 @@ int [,] NewSpir2dArr ()
     
     
 
-   /* Что то этот вариант не получился, не могу разобраться.
-
+   
    Console.Write("enter quantity of rows: ");
     int rows = Convert.ToInt32(Console.ReadLine());
     Console.Write("enter quantity of columns: ");
@@ -221,7 +220,7 @@ Print2dArray(myArray);
 */
 
 //Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
-
+/*
 int [,] NewRandom2dArr ()
 {
     int size = 2;
@@ -274,6 +273,7 @@ Print2dArray(firstArr);
 int [,]secondArr = NewRandom2dArr();
 Print2dArray(secondArr);
 Matrix(firstArr, secondArr);
+*/
 
 
 
