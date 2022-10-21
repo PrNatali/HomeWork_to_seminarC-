@@ -40,3 +40,14 @@ Console.WriteLine($"summa numbers from {b} to {a} = {SumFromNumToNum(b,a)}");
 
 //Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
 
+void FunAckerman (int a, int b)
+{
+    if(a == 0) Console.WriteLine(b +1);
+    if(a == 1) Console.WriteLine(b+2);
+    if(a == 2) Console.WriteLine(2*b+3);
+    else 
+    Console.WriteLine(Math.Pow(2,b+3)-3);
+}
+
+
+FunAckerman(2,3);
