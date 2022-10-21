@@ -39,7 +39,7 @@ Console.WriteLine($"summa numbers from {b} to {a} = {SumFromNumToNum(b,a)}");
 */
 
 //Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
-
+/*
 void FunAckerman (int a, int b)
 {
     if(a == 0) Console.WriteLine(b +1);
@@ -51,3 +51,14 @@ void FunAckerman (int a, int b)
 
 
 FunAckerman(2,3);
+*/
+
+int FunctionAckerman(int m, int n)
+{
+    if(m == 0) return n+1;
+    if((m > 0) && (n == 0)) return FunctionAckerman(m-1, 1);
+    else
+    return FunctionAckerman(m - 1, FunctionAckerman(m, n-1));
+}
+Console.WriteLine(FunctionAckerman(2,2));
+
